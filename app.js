@@ -13,10 +13,10 @@ todoForm.addEventListener('submit', function(event) {
 function addTodo() {
     const todoText = todoInput.value.trim();
     if (todoText === '') {
-        alert('Please enter a todo item.');
+        alert('Please enter an item.');
         return;
     } else if (allTodos.some(todo => todo.text === todoText)) {
-        alert('Todo item already exists.');
+        alert('Item already exists. Please enter a different item.');
         return;
     } else if (todoText.length > 0) {
         const todoObject = {
