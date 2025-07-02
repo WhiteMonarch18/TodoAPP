@@ -18,9 +18,6 @@ function addTodo() {
     } else if (allTodos.some(todo => todo.text === todoText)) {
         alert('Todo item already exists.');
         return;
-    } else if (todoText.length > 30) {
-        alert('Todo item must be less than 30 characters.');
-        return;
     } else if (todoText.length > 0) {
         const todoObject = {
             text: todoText,
